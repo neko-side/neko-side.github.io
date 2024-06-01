@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Unity：访问Event.current抛出NullReferenceException</title>
+    <link href="/posts/15/"/>
+    <url>/posts/15/</url>
+    
+    <content type="html"><![CDATA[<h1 id="unity访问event.current抛出nullreferenceexception">Unity：访问Event.current抛出NullReferenceException</h1><p>参考：</p><blockquote><p>百度贴吧：<a href="https://tieba.baidu.com/p/6840492604">unityEvent.current获取为null的问题_unity吧_百度贴吧 (baidu.com)</a></p></blockquote><p>抛出空引用的原因是在Start()或Update()中访问Event.current，应该<strong>在OnGUI()中访问</strong>.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Unity</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>解决Unity每次打开都要选择代码编辑器</title>
+    <link href="/posts/13/"/>
+    <url>/posts/13/</url>
+    
+    <content type="html"><![CDATA[<h1 id="解决unity每次打开都要选择代码编辑器">解决Unity每次打开都要选择代码编辑器</h1><p>参考：</p><blockquote><p>百度贴吧：<a href="https://tieba.baidu.com/p/8104160536">【求助】怎么设置unity的默认脚本编辑器每次打开unity都要重新进首选项设置，很麻烦，怎么让它默认就是visual【unity3d吧】_百度贴吧(baidu.com)</a></p></blockquote><p>每次打开Unity 都要重新选择代码编辑器</p><p>解决方案：</p><p><strong>以管理员模式运行Unity</strong>，选择代码编辑器，之后无需以管理员模式启动</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Unity</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>手动下载Gradle下载的包</title>
+    <link href="/posts/10/"/>
+    <url>/posts/10/</url>
+    
+    <content type="html"><![CDATA[<h1 id="手动下载gradle下载的包">手动下载Gradle下载的包</h1><p>打开.gradle(在Users/你的用户名下或自定义目录下)或使用Everything搜索要下载的包，</p><figure><img src="/posts/10/1.png" alt="1"><figcaption aria-hidden="true">1</figcaption></figure><p>定位到Gradle下载包的位置</p><figure><img src="/posts/10/2.png" alt="2"><figcaption aria-hidden="true">2</figcaption></figure><p>上图中.lock文件是Gradle下载的，上面两个文件请忽略，通过Gradle的下载链接手动下载包</p><figure><img src="/posts/10/3.png" alt="3"><figcaption aria-hidden="true">3</figcaption></figure><figure><img src="/posts/10/4.png" alt="4"><figcaption aria-hidden="true">4</figcaption></figure><p>将该zip文件移动到上面的目录，然后根据Gradle下载的文件修改我们下好文件的名称，我这里把<em>OpenJDK8U-jdk_x64_windows_hotspot_8u402b06.zip</em>改为<em>adoptopenjdk-8-x64-windows.zip</em>,然后重新Build，Gradle会自动解压我们放置好的包，<img src="/posts/10/5.png" alt="5"></p><p>.</p><h2 id="另一种包的位置">另一种包的位置</h2><figure><img src="/posts/10/6.png" alt="6"><figcaption aria-hidden="true">6</figcaption></figure><p>这里文件夹的名字其实是下载的jar文件的SHA1码，手动下载后对照SHA1放入包文件即可.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>MinecraftForge</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>网站、书籍和文档</title>
+    <link href="/posts/5/"/>
+    <url>/posts/5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="网站书籍和文档">网站、书籍和文档</h1><h2 id="网站">网站</h2><h3 id="learnopengl">LearnOpenGL</h3><p>site: <a href="https://learnopengl-cn.github.io/">主页 - LearnOpenGLCN (learnopengl-cn.github.io)</a></p><h3 id="阮一峰计算机是如何启动的">阮一峰：计算机是如何启动的</h3><p>site: <a href="https://www.ruanyifeng.com/blog/2013/02/booting.html">计算机是如何启动的？- 阮一峰的网络日志 (ruanyifeng.com)</a></p><h3 id="阮一峰为什么主引导记录的内存地址是0x7c00">阮一峰：为什么主引导记录的内存地址是0x7C00</h3><p>site: <a href="https://www.ruanyifeng.com/blog/2015/09/0x7c00.html">为什么主引导记录的内存地址是0x7C00？- 阮一峰的网络日志 (ruanyifeng.com)</a></p><h3 id="阮一峰如何选择开源许可证">阮一峰：如何选择开源许可证</h3><p>site: <a href="https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">如何选择开源许可证？- 阮一峰的网络日志 (ruanyifeng.com)</a></p><h3 id="动手学深度学习v2">动手学深度学习v2</h3><p>site: <a href="https://zh-v2.d2l.ai/index.html#">《动手学深度学习》 —动手学深度学习 2.0.0 documentation (d2l.ai)</a></p><h3 id="pytorch下载">pytorch下载</h3><p>site: <a href="https://download.pytorch.org/whl/torch_stable.html">download.pytorch.org/whl/torch_stable.html</a></p><h2 id="书籍">书籍</h2><h3 id="cpp-game-engine-book">cpp-game-engine-book</h3><p>site: <a href="http://www.thisisgame.com.cn/tutorial?book=cpp-game-engine-book&amp;lang=zh&amp;md=Introduction.md">Introduction| 游戏引擎 浅入浅出 | 游戏人生</a></p><p>repo: <a href="https://github.com/ThisisGame/cpp-game-engine-book">ThisisGame/cpp-game-engine-book:从零编写游戏引擎教程 Writing a game engine tutorial from scratch(github.com)</a></p><h2 id="文档">文档</h2><h3 id="unity-doc">Unity Doc</h3><p>site: <a href="https://docs.unity3d.com/Manual/index.html">Unity -Manual: Unity User Manual 2022.3 (LTS) (unity3d.com)</a></p><h3 id="unreal5.3-doc">Unreal5.3 Doc</h3><p>site: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-3-documentation">UnrealEngine 5.3 Documentation | Epic Developer Community(epicgames.com)</a></p><h2 id="教程">教程</h2><h3 id="阮一峰typescript入门教程">阮一峰Typescript入门教程</h3><p>site: <a href="https://wangdoc.com/typescript/">TypeScript 教程 -网道 (wangdoc.com)</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>OpenGL</tag>
+      
+      <tag>Cpp</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>使用代理导致无法上网问题</title>
+    <link href="/posts/3/"/>
+    <url>/posts/3/</url>
+    
+    <content type="html"><![CDATA[<h1 id="使用代理导致无法上网问题">使用代理导致无法上网问题</h1><p>系统：windows11</p><p>浏览器莫名其妙不能上网，打开TUN模式可以上网；QQ等不受影响。</p><p>因我水平不足，试过网上各种办法，如修改Windows设置、修改注册表、修改Internet设置，Windows网络重置，重新打开代理软件，都无法解决</p><p>最后使用<strong>360断网急救箱</strong>解决，可以找到其单文件版本</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>proxy</tag>
+      
+      <tag>网络问题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>如何在win11终端中同时运行两条命令</title>
+    <link href="/posts/2/"/>
+    <url>/posts/2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="如何在win11终端中同时运行两条命令">如何在win11终端中同时运行两条命令</h1><p>使用"&amp;"或"&amp;&amp;"</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">命令<span class="hljs-number">1</span> <span class="hljs-string">&quot;&amp;&amp;&quot;</span> 命令<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure><p><strong>有部分命令会报错</strong></p><p>win10cmd实测不行，只会运行前一个命令。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Windows11</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Unity： Layout could not be fully loaded</title>
+    <link href="/posts/6/"/>
+    <url>/posts/6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="unity-layout-could-not-be-fully-loaded">Unity: Layout could notbe fully loaded</h1><blockquote><p>The layout"C:/Users/<username>/AppData/Roaming/Unity/Editor-5.x/Preferences-2022.dwlt"could not be fully loaded, this can happen when the layout containsEditorWindows not available in this project.</username></p></blockquote><p>可能是该布局包含了其他Assets里的窗口，比如Navigation，但新建的项目没有安装AiNavigation，所以出现该警告</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Unity</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
